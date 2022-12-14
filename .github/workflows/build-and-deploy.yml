@@ -44,3 +44,17 @@ jobs:
       group: release-${{ github.event.number || github.ref }}
       needs:
         - test-jvm
+
+  success:
+    runs-on: ubuntu-latest
+    needs:
+      - test-jvm
+      - release
+    if: >-
+      always() && (
+        contains(join(needs.*.result, ','), 'failure')
+        || !contains(join(needs.*.result, ','), 'cancelled')
+      )
+    steps:
+      - name: Verify that there were no failures
+        run: ${{ !contains(join(needs.*.result, ','), 'failure') }}
