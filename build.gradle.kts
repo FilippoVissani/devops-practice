@@ -12,6 +12,7 @@ plugins {
     alias(libs.plugins.kotlinQA)
     alias(libs.plugins.dokka)
     alias(libs.plugins.taskTree)
+    alias(libs.plugins.publishCentral)
 
     // Apply the application plugin to add support for building a CLI application in Java.
     application
@@ -36,4 +37,30 @@ dependencies {
 application {
     // Define the main class for the application.
     mainClass.set("io.github.filippovissani.AppKt")
+}
+
+group = "io.github.filippovissani" // This must be configured for the generated pom.xml to work correctly
+publishOnCentral {
+    projectUrl.set("https://github.com/FilippoVissani/${project.name}")
+    scmConnection.set("git:git@github.com:FilippoVissani/${project.name}")
+}
+publishing {
+    publications {
+        withType<MavenPublication> {
+            pom {
+                developers {
+                    developer {
+                        name.set("Filippo Vissani")
+                        email.set("filippo.vissani@studio.unibo.it")
+                        url.set("https://filippovissani.github.io/")
+                    }
+                }
+            }
+        }
+    }
+}
+signing {
+    val signingKey: String? by project
+    val signingPassword: String? by project
+    useInMemoryPgpKeys(signingKey, signingPassword)
 }
