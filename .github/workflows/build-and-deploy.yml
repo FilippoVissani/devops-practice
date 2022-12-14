@@ -1,8 +1,7 @@
-name: CI/CD
+name: CI/CD Process
 on:
-  push:
-    branches:
-      - 'main'
+  workflow_call:
+  workflow_dispatch:
 
 jobs:
   test-jvm:
@@ -14,7 +13,7 @@ jobs:
           - macos-latest
         java-version:
           - 11
-          - 17
+          - 18
         jdk-dist:
           - adopt-hotspot
           - adopt-openj9
@@ -37,3 +36,11 @@ jobs:
 
       - name: Run tests
         run: gradle test
+
+  release:
+    concurrency:
+      # Only one release job at a time per branch, as only master releases.
+      # Strictly sequential.
+      group: release-${{ github.event.number || github.ref }}
+      needs:
+        - test-jvm
