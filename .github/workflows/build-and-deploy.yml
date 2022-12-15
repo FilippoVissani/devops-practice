@@ -5,6 +5,7 @@ on:
 
 jobs:
   check:
+    if: false
     strategy:
       matrix:
         os:
@@ -57,7 +58,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npm install
-          npx semantic-release
+          npx semantic-release --dry-run --debug
 
   success:
     runs-on: ubuntu-latest
