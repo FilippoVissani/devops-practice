@@ -40,6 +40,7 @@ application {
 }
 
 group = "io.github.filippovissani" // This must be configured for the generated pom.xml to work correctly
+
 publishOnCentral {
     projectUrl.set("https://github.com/FilippoVissani/${project.name}")
     scmConnection.set("git:git@github.com:FilippoVissani/${project.name}")
