@@ -60,7 +60,7 @@ jobs:
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.SIGNING_PASSWORD }}
         run: |
           npm install
-          npx semantic-release --debug --dry-run
+          npx semantic-release
 
   success:
     runs-on: ubuntu-latest
