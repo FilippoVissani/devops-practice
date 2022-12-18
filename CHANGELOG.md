@@ -1,3 +1,24 @@
+## [1.1.0](https://github.com/FilippoVissani/devops-practice/compare/1.0.0...1.1.0) (2022-12-18)
+
+
+### Features
+
+* Added new feature ([3475b9d](https://github.com/FilippoVissani/devops-practice/commit/3475b9d1a013f2a727e8f4c6627b0dad83ba69f8))
+
+
+### Dependency updates
+
+* **deps:** add renovate.json ([2e1bc04](https://github.com/FilippoVissani/devops-practice/commit/2e1bc04b291cd75b87d9bbcc5c0cd871ea8fd841))
+* **deps:** update dependency gradle to v7.6 ([864657a](https://github.com/FilippoVissani/devops-practice/commit/864657a36d9b6a05a37ceb37399535b4cb649f0b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.0 ([3dc5518](https://github.com/FilippoVissani/devops-practice/commit/3dc55181b87599dcc51c80373ca38e10c8386e00))
+
+
+### Build and continuous integration
+
+* Changed GitHub access token ([80da778](https://github.com/FilippoVissani/devops-practice/commit/80da77883ebcbaa3413cfdefa92e68f020325346))
+* Now checkout action uses ssh ([abedb46](https://github.com/FilippoVissani/devops-practice/commit/abedb461ef932faf2b2c6ef30a7f67a8cd7ac6d4))
+* Update Renovate config ([e9cd7d8](https://github.com/FilippoVissani/devops-practice/commit/e9cd7d8711e534b83b214dca3c22e239a35f8272))
+
 ## 1.0.0 (2022-12-16)
 
 
