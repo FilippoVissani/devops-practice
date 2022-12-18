@@ -6,7 +6,7 @@ package io.github.filippovissani
 class App {
     val greeting: String
         get() {
-            return "Hello World!"
+            return "Hello World!!"
         }
 }
 
