@@ -37,6 +37,8 @@ jobs:
 
   test-release:
     name: Test Release
+    needs:
+      - check
     runs-on: ubuntu-latest
     if: >-
       !github.event.repository.fork
@@ -95,6 +97,8 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - check
+      - test-release
+      - release
     if: >-
       always() && (
         contains(join(needs.*.result, ','), 'failure')
