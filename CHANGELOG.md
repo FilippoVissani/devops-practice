@@ -1,3 +1,31 @@
+## [1.0.1](https://github.com/FilippoVissani/devops-practice/compare/1.0.0...1.0.1) (2023-01-12)
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.16 ([0a01f8e](https://github.com/FilippoVissani/devops-practice/commit/0a01f8eb14b4549050bc51debe2989517ee95c8f))
+* **deps:** update node.js to 18.13 ([d7ed1fa](https://github.com/FilippoVissani/devops-practice/commit/d7ed1fa7832a944d03b506f35e9237efcf259b11))
+* **deps:** update plugin kotlinqa to v0.29.2 ([caa2260](https://github.com/FilippoVissani/devops-practice/commit/caa226082a1a9b0368d59548ddf339ad948db1a6))
+* **deps:** update plugin kotlinqa to v0.31.0 ([ebf2008](https://github.com/FilippoVissani/devops-practice/commit/ebf20089f471e4dfb3a55b2893f56da90c48b5e6))
+* **deps:** update plugin publishcentral to v2.0.12 ([15dac17](https://github.com/FilippoVissani/devops-practice/commit/15dac1792a28cc8118de67f97c481c5837cfcb36))
+* **deps:** update plugin publishcentral to v3 ([4586ed5](https://github.com/FilippoVissani/devops-practice/commit/4586ed5bed256b233cf5fda19cab1c678b316d6c))
+* **deps:** update plugin tasktree to v2.1.1 ([1c32d9e](https://github.com/FilippoVissani/devops-practice/commit/1c32d9ecf8894868ddaa48589af48e40a854226b))
+
+
+### Documentation
+
+* added README.md ([adb95c4](https://github.com/FilippoVissani/devops-practice/commit/adb95c4056a43755a52ae89a075fd682fa15f5b5))
+
+
+### Build and continuous integration
+
+* Added dry run for publishing ([9f6f410](https://github.com/FilippoVissani/devops-practice/commit/9f6f410555d293a7f43a243799a9af926ce2048a))
+* Fixed jdk-dist in workflow ([f72907d](https://github.com/FilippoVissani/devops-practice/commit/f72907de37cf33fa3c32e97c321a8c2246d1a95c))
+* modified jobs dependencies in workflow ([9499295](https://github.com/FilippoVissani/devops-practice/commit/9499295b7602e3b2f61c0b8e4c34d347950b5f3b))
+* Removed OSes from matrix in workflow ([7239400](https://github.com/FilippoVissani/devops-practice/commit/72394008fc903e56aacbd2a4f97ab838b0c247bb))
+* removed ssh key ([681bb6d](https://github.com/FilippoVissani/devops-practice/commit/681bb6d81ef7e2e4d113b17f0464801f323da2d4))
+* Switched semantic release config to branch main ([a50fade](https://github.com/FilippoVissani/devops-practice/commit/a50fade7aa323f8c58c43621d06836cc79df7ab9))
+
 ## 1.0.0 (2023-01-01)
 
 
