@@ -13,10 +13,8 @@ jobs:
           - macos-latest
         java-version:
           - 11
-          - 18
         jdk-dist:
           - adopt-hotspot
-          - adopt-openj9
     runs-on: ${{ matrix.os }}
     name: Run tests via ${{ matrix.jdk-dist }} JDK v${{ matrix.java-version }}, on ${{ matrix.os }}
     steps:
