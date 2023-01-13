@@ -3,6 +3,8 @@ const publishCommands = `
 ./gradlew assemble --parallel || exit 1
 git tag -a -f \${nextRelease.version} \${nextRelease.version} -F CHANGELOG.md || exit 2
 git push --force origin \${nextRelease.version} || exit 3
+./gradlew clean build
+./gradlew uploadAllPublicationsToMavenCentralNexus closeStagingRepositoryOnMavenCentral
 `
 const releaseBranches = ["main"]
 config.branches = releaseBranches
