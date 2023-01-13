@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/FilippoVissani/devops-practice/compare/1.0.1...1.1.0) (2023-01-13)
+
+
+### Features
+
+* triggering Semantic Release ([ba6d3e7](https://github.com/FilippoVissani/devops-practice/commit/ba6d3e78f182387eda7df29c406214886239cec3))
+
+
+### Build and continuous integration
+
+* Configured Semantic Release to publish on central ([82295c7](https://github.com/FilippoVissani/devops-practice/commit/82295c73ec34228ec2d003d03078707fc30cc747))
+
 ## [1.0.1](https://github.com/FilippoVissani/devops-practice/compare/1.0.0...1.0.1) (2023-01-12)
 
 
