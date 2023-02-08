@@ -1,6 +1,6 @@
 [versions]
 kotest = "5.5.5"
-kotlin = "1.8.0"
+kotlin = "1.8.10"
 
 [libraries]
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
