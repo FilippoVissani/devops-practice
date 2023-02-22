@@ -11,7 +11,7 @@ rootProject.name = "devops-practice"
 val destination = File(".git/hooks/commit-msg")
 
 plugins {
-  id("org.danilopianini.gradle-pre-commit-git-hooks") version "1.1.1"
+  id("org.danilopianini.gradle-pre-commit-git-hooks") version "1.1.2"
 }
 
 gitHooks {
