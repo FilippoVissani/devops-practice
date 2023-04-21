@@ -19,4 +19,4 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 dokka = "org.jetbrains.dokka:1.8.10"
 kotlinQA = "org.danilopianini.gradle-kotlin-qa:0.38.0"
 taskTree = "com.dorongold.task-tree:2.1.1"
-publishCentral = "org.danilopianini.publish-on-central:4.1.0"
+publishCentral = "org.danilopianini.publish-on-central:5.0.1"
